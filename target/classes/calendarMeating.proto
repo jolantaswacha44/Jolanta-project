@@ -27,7 +27,7 @@ message LoginResponse{
 }
 
 message ScheduleMeatingRequest{
-	string username = 1;
+	string requesteMessage = 1;
 }
 
 message ScheduleMeatingResponse{
@@ -43,3 +43,4 @@ message LogoutResponse{
 	int32 responseCode = 2;
 }
 
+message Empty{}

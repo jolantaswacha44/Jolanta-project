@@ -44,6 +44,11 @@ public final class calendarMeatingImpl {
   static final 
     com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
       internal_static_calendarMeating_LogoutResponse_fieldAccessorTable;
+  static final com.google.protobuf.Descriptors.Descriptor
+    internal_static_calendarMeating_Empty_descriptor;
+  static final 
+    com.google.protobuf.GeneratedMessageV3.FieldAccessorTable
+      internal_static_calendarMeating_Empty_fieldAccessorTable;
 
   public static com.google.protobuf.Descriptors.FileDescriptor
       getDescriptor() {
@@ -56,21 +61,21 @@ public final class calendarMeatingImpl {
       "\n\025calendarMeating.proto\022\017calendarMeating" +
       "\"2\n\014LoginRequest\022\020\n\010username\030\001 \001(\t\022\020\n\010pa" +
       "ssword\030\002 \001(\t\">\n\rLoginResponse\022\027\n\017respons" +
-      "eMessage\030\001 \001(\t\022\024\n\014responseCode\030\002 \001(\005\"*\n\026" +
-      "ScheduleMeatingRequest\022\020\n\010username\030\001 \001(\t" +
-      "\"H\n\027ScheduleMeatingResponse\022\027\n\017responseM" +
-      "essage\030\001 \001(\t\022\024\n\014responseCode\030\002 \001(\005\"!\n\rLo" +
-      "goutRequest\022\020\n\010username\030\001 \001(\t\"?\n\016LogoutR" +
-      "esponse\022\027\n\017responseMessage\030\001 \001(\t\022\024\n\014resp" +
-      "onseCode\030\002 \001(\0052\222\002\n\017calendarMeating\022H\n\005lo" +
-      "gin\022\035.calendarMeating.LoginRequest\032\036.cal" +
-      "endarMeating.LoginResponse\"\000\022h\n\017schedule" +
-      "Meating\022\'.calendarMeating.ScheduleMeatin" +
-      "gRequest\032(.calendarMeating.ScheduleMeati" +
-      "ngResponse\"\000(\001\022K\n\006logout\022\036.calendarMeati" +
-      "ng.LogoutRequest\032\037.calendarMeating.Logou" +
-      "tResponse\"\000B(\n\017calendarMeatingB\023calendar" +
-      "MeatingImplP\001b\006proto3"
+      "eMessage\030\001 \001(\t\022\024\n\014responseCode\030\002 \001(\005\"1\n\026" +
+      "ScheduleMeatingRequest\022\027\n\017requesteMessag" +
+      "e\030\001 \001(\t\"H\n\027ScheduleMeatingResponse\022\027\n\017re" +
+      "sponseMessage\030\001 \001(\t\022\024\n\014responseCode\030\002 \001(" +
+      "\005\"!\n\rLogoutRequest\022\020\n\010username\030\001 \001(\t\"?\n\016" +
+      "LogoutResponse\022\027\n\017responseMessage\030\001 \001(\t\022" +
+      "\024\n\014responseCode\030\002 \001(\005\"\007\n\005Empty2\222\002\n\017calen" +
+      "darMeating\022H\n\005login\022\035.calendarMeating.Lo" +
+      "ginRequest\032\036.calendarMeating.LoginRespon" +
+      "se\"\000\022h\n\017scheduleMeating\022\'.calendarMeatin" +
+      "g.ScheduleMeatingRequest\032(.calendarMeati" +
+      "ng.ScheduleMeatingResponse\"\000(\001\022K\n\006logout" +
+      "\022\036.calendarMeating.LogoutRequest\032\037.calen" +
+      "darMeating.LogoutResponse\"\000B(\n\017calendarM" +
+      "eatingB\023calendarMeatingImplP\001b\006proto3"
     };
     com.google.protobuf.Descriptors.FileDescriptor.InternalDescriptorAssigner assigner =
         new com.google.protobuf.Descriptors.FileDescriptor.    InternalDescriptorAssigner() {
@@ -101,7 +106,7 @@ public final class calendarMeatingImpl {
     internal_static_calendarMeating_ScheduleMeatingRequest_fieldAccessorTable = new
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_calendarMeating_ScheduleMeatingRequest_descriptor,
-        new java.lang.String[] { "Username", });
+        new java.lang.String[] { "RequesteMessage", });
     internal_static_calendarMeating_ScheduleMeatingResponse_descriptor =
       getDescriptor().getMessageTypes().get(3);
     internal_static_calendarMeating_ScheduleMeatingResponse_fieldAccessorTable = new
@@ -120,6 +125,12 @@ public final class calendarMeatingImpl {
       com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
         internal_static_calendarMeating_LogoutResponse_descriptor,
         new java.lang.String[] { "ResponseMessage", "ResponseCode", });
+    internal_static_calendarMeating_Empty_descriptor =
+      getDescriptor().getMessageTypes().get(6);
+    internal_static_calendarMeating_Empty_fieldAccessorTable = new
+      com.google.protobuf.GeneratedMessageV3.FieldAccessorTable(
+        internal_static_calendarMeating_Empty_descriptor,
+        new java.lang.String[] { });
   }
 
   // @@protoc_insertion_point(outer_class_scope)

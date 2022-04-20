@@ -86,13 +86,13 @@ public class calendarMeatingServer extends calendarMeatingImplBase{
 	@Override
 	public StreamObserver<ScheduleMeatingRequest> scheduleMeating(
 			StreamObserver<ScheduleMeatingResponse> responseObserver) {
-		System.out.println("On Server;  inside the striming scheduleMeating");
+		System.out.println("On Server;  inside the streaming scheduleMeating");
 		return new StreamObserver<ScheduleMeatingRequest>() {
 
 			@Override
 			public void onNext(ScheduleMeatingRequest value) {
 				// TODO Auto-generated method stub
-				
+				System.out.println("On Server; message from the client" + value.getRequesteMessage());
 			}
 
 			@Override
@@ -104,6 +104,13 @@ public class calendarMeatingServer extends calendarMeatingImplBase{
 			@Override
 			public void onCompleted() {
 				// TODO Auto-generated method stub
+				ScheduleMeatingResponse.Builder response = ScheduleMeatingResponse.newBuilder();
+				
+				response.setResponseMessage("Server say it has got your compleated message, thanks ");
+				
+				responseObserver.onNext(response.build());
+				
+				responseObserver.onCompleted();
 				
 			}};
 	}

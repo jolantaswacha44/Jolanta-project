@@ -2,6 +2,7 @@ package calendarMeating;
 
 import io.grpc.ManagedChannel;
 import io.grpc.ManagedChannelBuilder;
+import io.grpc.stub.StreamObserver;
 
 public class calendarMeatingClient {
 
@@ -26,10 +27,10 @@ public class calendarMeatingClient {
 		//System.out.println("Response from Server: " + responseOut);
 
 		//Call the login RPC from login() method
-		//login();
+		login();
 
 		//Call the logout RPC from logout() method
-		//logout();
+		logout();
 	}
 
 	//Login
@@ -53,4 +54,26 @@ public class calendarMeatingClient {
 
 		System.out.println("Response from Server: " + response);
 	}
+	
+	// scheduleMeating
+	StreamObserver<ScheduleMeatingRequest> responseObserver = new StreamObserver<ScheduleMeatingRequest>() {
+
+		@Override
+		public void onNext(ScheduleMeatingRequest value) {
+			// TODO Auto-generated method stub
+			System.out.println("Final Response from server " + value.getRequesteMessage());
+		}
+
+		@Override
+		public void onError(Throwable t) {
+			// TODO Auto-generated method stub
+			
+		}
+
+		@Override
+		public void onCompleted() {
+			// TODO Auto-generated method stub
+			
+		}};
+			
 }

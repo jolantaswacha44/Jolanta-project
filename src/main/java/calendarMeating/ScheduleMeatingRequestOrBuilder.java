@@ -8,12 +8,12 @@ public interface ScheduleMeatingRequestOrBuilder extends
     com.google.protobuf.MessageOrBuilder {
 
   /**
-   * <code>string username = 1;</code>
+   * <code>string requesteMessage = 1;</code>
    */
-  java.lang.String getUsername();
+  java.lang.String getRequesteMessage();
   /**
-   * <code>string username = 1;</code>
+   * <code>string requesteMessage = 1;</code>
    */
   com.google.protobuf.ByteString
-      getUsernameBytes();
+      getRequesteMessageBytes();
 }
